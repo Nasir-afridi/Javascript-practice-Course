@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ex-6i</title>
+</head>
+<body>
+    <script>
+      let  randomNumber = Math.random();    
+      let result = '';
+      let guess = 'heads';
+
+      if(randomNumber < 0.5) {
+        result = 'heads';
+      }else{
+        result = 'tails';
+      }
+      
+      if(guess === result){
+        console.log('You Win!')
+      }else if(guess!==result){
+        console.log('You Lose!');
+      }
+    </script>
+</body>
+</html>
