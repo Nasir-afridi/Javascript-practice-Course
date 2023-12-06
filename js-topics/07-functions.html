@@ -5,6 +5,7 @@
 </head>
 <body>
     <script>             // function let us reuse the code
+    /*
         function var1(){
             console.log(2 + 2);      //inside the curly brases is called function body
             console.log('hello');
@@ -13,8 +14,14 @@
 
 
 
-        var1();        //call the function for output when we not call the function the value of func not run
-        var1();        //it will reuse for showing var1 value
+        var1();  //call the function for output when we not call the function the value of func not run
+        var1();  //it will reuse for showing var1 value*/
+
+        function calculateTax (parameter1,parameter2){  // in this case the 3000 is saved in para1 and the 0.2 save in parameter2
+            console.log(parameter1 * parameter2);
+        }
+        calculateTax(3000,0.2);
+        calculateTax(4000); //we put a value like this it is xalled passing a value into function.
     </script>       
 </body>
 </html>
