@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        const product = {
+                                    //the code on the left side is property Name,price
+                                    //the code on the right is it value
+
+            Name : 'Socks',         //this line is called property value pair
+            price : 1090,
+
+            rating:{                // we can use object inside the object and this is called Nested-object
+                stars: 4.5,
+                count: 87
+            }
+        };
+
+
+        console.log(product);
+        console.log(product.Name);    // we can only acces the value of name property 
+        console.log(product.price);    // we can only acces the value of price property 
+
+
+        product.Name = 'Cotton socks';       // here i can change the value of name property 
+        console.log(product.Name);
+
+
+        product.addValue = 2 + 2;              // add a property and value in obbject
+        console.log(product);
+        console.log(product);
+
+        delete product.addValue;              // delete it from the object
+        console.log(product);
+        
+        const value1 = {
+            pi : 3.14
+        };
+        console.log(value1);
+        console.log(value1.pi);             //this method is called dot notation
+        console.log(value1['pi']);             //this method is called bracket notation
+        console.log(value1['delievery-time']);
+        console.log(product.rating);
+    </script>
+</body>
+</html>
